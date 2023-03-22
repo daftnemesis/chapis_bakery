@@ -1,0 +1,64 @@
+"use client";
+
+
+import Link from "next/link"
+import {HomeIcon, ChatBubbleOvalLeftEllipsisIcon, UserCircleIcon, Bars3Icon} from '@heroicons/react/24/outline'
+import { useState } from "react"
+import { Dancing_Script } from 'next/font/google';
+
+const dancing_script = Dancing_Script({
+  weight: '400',
+  subsets: ['latin']
+
+})
+
+
+const Navbar = () => {
+
+  const [toggleMenu, setToggleMenu] = useState(false)
+
+  const handleToggle = () => {
+    setToggleMenu(!toggleMenu)
+    console.log(toggleMenu)
+  }
+
+  return (
+    <div className='bg-pink-100'>
+      <nav className='bg-pink-100 flex flex-wrap justify-between px-4 py-2'>
+
+        <div>
+          <h1 className={`${dancing_script.className} text-2xl`}>Chapis Delights and Piñatas</h1>
+        </div>
+
+
+        {/* Boton Menu */}
+        <button className="flex items-center md:hidden" onClick={handleToggle}>
+          <Bars3Icon className="h-8" />
+        </button>
+
+        {/* Navegacion */}
+        <div className={`md:flex gap-2 items-center animate__animated animate__fadeInDown ${toggleMenu ? 'flex' : 'hidden'} `}>
+
+          <div className="flex items-center gap-1">
+            <HomeIcon className="h-4" />
+            <Link href='/'>Home</Link>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <UserCircleIcon className="h-4" />
+            <Link href='/about'>About</Link>
+          </div>
+
+          <div className="flex items-center gap-1">
+            <ChatBubbleOvalLeftEllipsisIcon className="h-4" />
+            <Link href='/contact'>Contact</Link>
+          </div>
+
+        </div>
+
+      </nav>
+    </div>
+  )
+}
+
+export default Navbar
