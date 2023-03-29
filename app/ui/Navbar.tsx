@@ -23,11 +23,13 @@ const Navbar = () => {
   }
 
   return (
-    <div className='bg-pink-100'>
-      <nav className='bg-pink-100 flex flex-wrap justify-between px-4 py-2'>
+    <div className='bg-pink-200 sticky top-0 rounded-md text-black'>
+      <nav className='bg-green-200 flex flex-wrap justify-between px-4 py-2 rounded-md'>
 
         <div>
-          <h1 className={`${dancing_script.className} text-2xl`}>Chapis Delights and Piñatas</h1>
+          <Link href='/'>
+            <h1 className={`${dancing_script.className} text-2xl`}>Chapis Delights and Piñatas</h1>
+          </Link>
         </div>
 
 

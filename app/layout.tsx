@@ -7,7 +7,7 @@ import Navbar from './ui/Navbar'
 
 const lato = Lato({
   subsets: ['latin'],
-  weight: '700'
+  weight: '400'
 })
 
 
@@ -20,11 +20,11 @@ export const metadata = {
 export default function RootLayout({ children }: {children: React.ReactNode}) {
   return (
     <html lang="en" className={lato.className}>
-      <body>
+      <body className='p-2 max-w-4xl mx-auto bg-yellow-50'>
 
         <Navbar />
 
-        {children}
+        { children }
         
       </body>
     </html>
