@@ -1,4 +1,5 @@
 import { Dancing_Script, Josefin_Sans } from 'next/font/google';
+import { MainCard } from './ui';
 
 const dancing_script = Dancing_Script({
   weight: '400',
@@ -25,6 +26,12 @@ export default function Home() {
           Endulza tus momentos especiales con nuestros deliciosos postres, sorprende a tus invitados con nuestras coloridas piñatas y descubre la frescura y sabor de nuestras gelatinas.
           </p> 
         </div>
+      </div>
+
+      <div className='flex flex-col md:flex-row mt-4 gap-4 items-center'>
+        <MainCard title='Piñatas' body='¡Decora tu fiesta con nuestras coloridas y hermosas piñatas!' />
+        <MainCard title='Reposteria' body='¡Endulza tu vida con nuestros deliciosos postres!' />
+        <MainCard title='Gelatinas' body='¡Siente la diferencia de las gelatinas hechas a mano!' />
       </div>
     </>
   )
