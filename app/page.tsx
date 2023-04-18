@@ -28,10 +28,10 @@ export default function Home() {
         </div>
       </div>
 
-      <div className='flex flex-col md:flex-row mt-4 gap-4 items-center'>
-        <MainCard title='Piñatas' body='¡Decora tu fiesta con nuestras coloridas y hermosas piñatas!' />
-        <MainCard title='Reposteria' body='¡Endulza tu vida con nuestros deliciosos postres!' />
-        <MainCard title='Gelatinas' body='¡Siente la diferencia de las gelatinas hechas a mano!' />
+      <div className='flex flex-col md:flex-row mt-4 gap-4 items-center md:items-stretch'>
+        <MainCard title='Piñatas' body='¡Decora tu fiesta con nuestras coloridas y hermosas piñatas!' src='https://i.ibb.co/nr54Bky/My-project-1-1.png' />
+        <MainCard title='Reposteria' body='¡Endulza tu vida con nuestros deliciosos postres!' src='https://i.ibb.co/Y749DNj/Imagen-de-Whats-App-2023-04-10-a-las-22-58-32.jpg' />
+        <MainCard title='Gelatinas' body='¡Siente la diferencia de las gelatinas hechas a mano!' src='https://i.ibb.co/2ZTdM8n/My-project-1-2.png' />
       </div>
     </>
   )
