@@ -23,7 +23,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className='bg-pink-200 sticky top-0 rounded-md text-black'>
+    <div className='bg-pink-200 sticky top-0 rounded-md text-black z-10'>
       <nav className='bg-green-200 flex flex-wrap justify-between px-4 py-2 rounded-md'>
 
         <div>
@@ -39,7 +39,7 @@ const Navbar = () => {
         </button>
 
         {/* Navegacion */}
-        <div className={`md:flex gap-2 items-center animate__animated animate__fadeInDown ${toggleMenu ? 'flex' : 'hidden'} `}>
+        <div className={`md:flex gap-2 items-center animate__animated animate__fadeInRight ${toggleMenu ? 'flex' : 'hidden'} `}>
 
           <div className="flex items-center gap-1">
             <HomeIcon className="h-4" />

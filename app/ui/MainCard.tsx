@@ -9,8 +9,8 @@ type Props = {
 
 const MainCard = ({title, body, src}: Props) => {
   return (
-    <div className='flex flex-col w-3/4 border border-slate-200 rounded-lg shadow-md'>
-      <Image className='rounded-t-lg' src={src} alt='imagen' width={300} height={300} />
+    <div className='flex flex-col w-3/4 border border-slate-200 rounded-lg shadow-lg'>
+      <Image className='rounded-t-lg h-[300px] transition delay-100 hover:rotate-6 hover:scale-110 duration-300 hover:rounded-b-lg hover:shadow-xl cursor-pointer' src={src} alt='imagen' width={300} height={300} />
       <div className='px-2 flex flex-col gap-2 text-center my-2 md:gap-6'>
         <h3 className='text-2xl font-bold text-pink-200'>{ title }</h3>
         <p className='text-xl'>{ body }</p>
