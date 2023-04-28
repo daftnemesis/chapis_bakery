@@ -1,9 +1,5 @@
 import { Dancing_Script, Josefin_Sans } from 'next/font/google';
 import { MainCard } from './ui';
-import Facebook from '../public/facebook.svg'
-import Whatsapp from '../public/whatsapp.svg'
-import Image from 'next/image';
-import Link from 'next/link';
 
 const dancing_script = Dancing_Script({
   weight: '400',
@@ -57,20 +53,7 @@ export default function Home() {
         </p>
       </div>
 
-      <div className='bg-orange-300 w-full rounded-lg text-center p-4'>
-        <h3 className={`text-pink-700 text-xl ${josefin.className}`}>Ponte en contacto con nosotros:</h3>
-        <div className='flex items-center justify-center gap-4'>
-
-          <Link href='https://www.facebook.com/profile.php?id=100088483476575' target='_blank'>
-            <Image className='w-20 p-2 bg-white rounded-full' src={Facebook} alt='facebook logo' />
-          </Link>
-
-          <Link href='https://api.whatsapp.com/send?phone=524741057477'>
-            <Image className='w-20 h-20 p-2 bg-white rounded-full' src={Whatsapp} alt='facebook logo' />
-          </Link>
-        </div>
-        <h6 className='text-sm text-gray-500 mt-2'>Pagina creada por Daftnemesis para mi morsito con mucho <span role="img" aria-label="heart">❤️</span> </h6>
-      </div>
+      
     </>
   )
 }

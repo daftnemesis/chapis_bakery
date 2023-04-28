@@ -48,12 +48,12 @@ const Navbar = () => {
 
           <div className="flex items-center gap-1">
             <UserCircleIcon className="h-4" />
-            <Link href='/about'>About</Link>
+            <Link href='/about'>Productos</Link>
           </div>
 
           <div className="flex items-center gap-1">
             <ChatBubbleOvalLeftEllipsisIcon className="h-4" />
-            <Link href='/contact'>Contact</Link>
+            <a href='#contacto'>Contacto</a>
           </div>
 
         </div>

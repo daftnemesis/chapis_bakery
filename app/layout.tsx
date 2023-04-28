@@ -4,6 +4,7 @@ import { Lato } from 'next/font/google'
 import './globals.css'
 import 'animate.css'
 import Navbar from './ui/Navbar'
+import { Footer } from './ui/Footer'
 
 const lato = Lato({
   subsets: ['latin'],
@@ -25,6 +26,8 @@ export default function RootLayout({ children }: {children: React.ReactNode}) {
         <Navbar />
 
         { children }
+
+        <Footer />
         
       </body>
     </html>
