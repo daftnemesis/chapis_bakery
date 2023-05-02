@@ -16,7 +16,7 @@ export const ViewProducts = ({imageUrls}: Props) => {
       {
         imageUrls.map((image) => (
           // <Image className='rounded-lg h-[300px] transition delay-100 hover:rotate-6 hover:scale-110 duration-300 hover:shadow-xl cursor-pointer' src={image.url} alt={image.id} key={image.id} width={300} height={300}/>
-          <div key={image.id} className='w-[250px] h-[250px] rounded-lg text-transparent bg-center bg-cover transition delay-100 hover:rotate-6 hover:scale-110 duration-300 hover:shadow-xl cursor-pointer' style={{backgroundImage: `url(${image.url})`}} >image</div>
+          <div key={image.id} className='w-[250px] h-[250px] animate__animated animate__fadeIn rounded-lg text-transparent bg-center bg-cover transition delay-100 hover:rotate-6 hover:scale-110 duration-300 hover:shadow-xl cursor-pointer' style={{backgroundImage: `url(${image.url})`}} >image</div>
         ))
       }
 

@@ -20,7 +20,7 @@ export const Footer = () => {
           <Image className='w-12 p-2 bg-white rounded-full' src={Facebook} alt='facebook logo' />
         </Link>
 
-        <Link href='https://api.whatsapp.com/send?phone=524741057477'>
+        <Link href='https://api.whatsapp.com/send?phone=524741057477' target='_blank'>
           <Image className='w-12 h-12 p-2 bg-white rounded-full' src={Whatsapp} alt='facebook logo' />
         </Link>
       </div>

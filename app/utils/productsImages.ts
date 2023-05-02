@@ -100,8 +100,8 @@ const aleatorios = [
     'url': 'https://i.ibb.co/qWGK8GL/gelapaleta.jpg'
   },
   {
-    'id': 'bts',
-    'url': 'https://i.ibb.co/hKD3kNG/pinata-estrella.png'
+    'id': 'mariposa',
+    'url': 'https://i.ibb.co/HD3yLxK/pinatas-3-mariposa.jpg'
   },
   {
     'id': 'bautizo',
