@@ -48,7 +48,7 @@ const Navbar = () => {
 
           <div className="flex items-center gap-1">
             <UserCircleIcon className="h-4" />
-            <Link href='/about'>Productos</Link>
+            <Link href='/products'>Productos</Link>
           </div>
 
           <div className="flex items-center gap-1">
